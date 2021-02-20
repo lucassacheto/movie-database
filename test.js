@@ -1,0 +1,3 @@
+describe('omdb-auto-complete', () => {
+
+});

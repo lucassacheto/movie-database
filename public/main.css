@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App{margin: 60px auto;max-width: 980px;width: 100%;}
+
+.App .omdb{text-align:center;font-family: 'Raleway Dots', cursive;margin: 40px auto 0;background: -webkit-linear-gradient(red 60%, #01828E);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-size: 80px;}
+.App .omdb img{display: block;margin: 20px auto;width: 20%;}
+.App .byomdb{text-align:center;font-family: 'Raleway Dots', cursive;margin:0 auto 40px;background: -webkit-linear-gradient(red 60%, #01828E);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-size: 30px;;}
+
+
+.auto-complete {font-size: 16px;text-transform: uppercase;margin: 0 auto;box-sizing: border-box;max-width: 480px;background: #000;}
+
+.auto-complete .item{padding: 20px;margin-bottom: 4px;box-sizing: border-box;max-width: 480px;}
+.auto-complete .item a{color:#ddd;text-decoration: none;}
+.auto-complete .item:hover{background-color:#ddd;opacity: 0.3;}
+.auto-complete .item:hover a{color:#000;}
+
+.omdbAutoComplete{padding: 30px 0 30px 20px;box-sizing: border-box;display: flex;margin: auto;background: transparent;border: 0;font-size: 30px;color:#ddd;font-weight: bold;outline: none !important;width: 100%;caret-color: #ddd;}
+.omdbAutoComplete::placeholder{color:#ddd;opacity: 0.3;}
+
+.boxSearch{display: flex;max-width: 560px;width: 100%;margin:auto;position: relative;border-radius: 20px;background: #000;padding-left: 20px;box-sizing: border-box;}
+.searchIcon{padding: 32px 0 0 0;font-size: 30px;color:#ddd;}
+
+.info{display: block;overflow: hidden;margin: 80px auto;max-width: 520px;}
+.info .thumb{float: left;margin-right: 40px;}
+.info .thumb img{width: 200px;}
+.info .title{font-size: 34px;color:#fff;margin-bottom: 16px;}
+.info .year{font-size: 16px;color:#fff;margin-bottom: 16px;}
+.info .director{font-size: 14px;color:#fff;margin-bottom: 16px;}
+.info .metascore{font-size: 14px;color:#fff;}
+
+@media only screen and (max-width: 580px) {
+    
+    .App .omdb{font-size: 12vw;}
+    .omdbAutoComplete::placeholder{color: #000;}
+    .boxSearch{max-width: 280px;}
+    .App .omdb img{width: 40%;}
+    .auto-complete{max-width: 240px;}
+    .info .thumb{float: unset;margin: unset;}
+    .info{width: 320px;text-align: center;}
+}
+
+
+.my-node-appear {
+    opacity: 0;
+    border: 1px solid red;
+}
+.my-node-appear-done {
+    opacity: 1;
+    transition: opacity 200ms;   
+}
