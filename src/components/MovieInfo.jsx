@@ -8,7 +8,7 @@ function MovieInfo(props){
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await fetch("http://www.omdbapi.com/?apikey=956a2093&i="+props.movieID);
+                const response = await fetch("https://www.omdbapi.com/?apikey=956a2093&i="+props.movieID);
                 const newData = await response.json();
                 setData(newData);
             } catch (error) {

@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 //import movies from "../movies";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +16,7 @@ function Search(props){
         if(userInput.length >= 3) { 
 
             try {
-                fetch("http://www.omdbapi.com/?apikey="+process.env.REACT_APP_API_KEY+"&s="+userInput).then((response) => response.json() ).then( data => setData(data.Search));
+                fetch("https://www.omdbapi.com/?apikey="+process.env.REACT_APP_API_KEY+"&s="+userInput).then((response) => response.json() ).then( data => setData(data.Search));
 
                 const filtered = data.filter( function ( f ) {
                     return f.Title.toLowerCase().includes(userInput.toLowerCase());
@@ -70,7 +70,7 @@ function Search(props){
         
             { props.state.show && (
                 <div className="auto-complete">
-                    { props.state.filtered.map( m => <div className="item" key={m.imdbID}><a href="/#" onClick={showMovie} id={m.imdbID}>{m.Title}</a></div> )}
+                    { props.state.filtered.map( m => <div className="item" key={m.imdbID} onClick={showMovie} id={m.imdbID}>{m.Title}</div> )}
                 </div>
             )}
             
