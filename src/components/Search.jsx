@@ -78,6 +78,8 @@ function Search(props){
                 <MovieInfo movieID={movieID} state={props.state} />
             )}
 
+            <footer>Lucas Sacheto</footer>
+
         </div>
     )
 

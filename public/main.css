@@ -32,6 +32,8 @@ body{
 .info .director{font-size: 14px;color:#fff;margin-bottom: 16px;}
 .info .metascore{font-size: 14px;color:#fff;}
 
+footer{text-align: center;color:#fff;margin: 40px auto;font-family: 'Raleway Dots', cursive;font-size: 16px;}
+
 @media only screen and (max-width: 580px) {
     
     .App .omdb{font-size: 12vw;}
