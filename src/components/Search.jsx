@@ -27,7 +27,7 @@ function Search(props){
                     userInput: userInput
                 })
             } catch (error) {
-                console.log("whoops")
+                console.log("whoops");
             }
             
         }else{
@@ -70,7 +70,9 @@ function Search(props){
         
             { props.state.show && (
                 <div className="auto-complete">
-                    { props.state.filtered.map( m => <div className="item" key={m.imdbID} onClick={showMovie} id={m.imdbID}>{m.Title}</div> )}
+                    { props.state.filtered.map( m => 
+                        <div className="item" key={m.imdbID} onClick={showMovie} id={m.imdbID}>{m.Title}</div> 
+                    )}
                 </div>
             )}
             

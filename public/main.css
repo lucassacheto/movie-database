@@ -10,6 +10,11 @@ body{
 .App .omdb img{display: block;margin: 20px auto;width: 20%;}
 .App .byomdb{text-align:center;font-family: 'Raleway Dots', cursive;margin:0 auto 40px;background: -webkit-linear-gradient(red 60%, #01828E);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-size: 30px;;}
 
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .App .omdb{color:red;-webkit-text-fill-color: red;}
+}}
+
 
 .auto-complete {font-size: 16px;text-transform: uppercase;margin: 0 auto;box-sizing: border-box;max-width: 480px;background: #000;}
 
